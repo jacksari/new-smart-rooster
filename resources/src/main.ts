@@ -1,8 +1,10 @@
 import { createApp } from "vue";
 
-import "./style.css";
-import router from "./router";
+import "./assets/styles/tw.css";
+import "./assets/styles/base.css";
+import router from "./routes/base";
+import store from "./stores/base";
 
 import App from "./App.vue";
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).use(store).mount("#app");

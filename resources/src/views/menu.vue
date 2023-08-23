@@ -6,7 +6,7 @@ import Modal from "@/components/Modal.vue";
 
 <template>
     <div>
-        <h1>MEnu page</h1>
+        <h1 class="text-red-400 bg-blue-400">MEnu page</h1>
         <Modal />
         <router-link :to="{ name: 'login' }">To login</router-link>
     </div>
