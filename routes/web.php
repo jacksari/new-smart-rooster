@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\View\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('welcome');
+    $path = public_path('index.html');
+    abort_unless(file_exists($path), 400, 'Page is not Found!');
+    return file_get_contents($path);
+    // return "hola";
 });

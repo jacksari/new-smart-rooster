@@ -20,5 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/test', function (Request $request) {
-    return 'Hola mundo';
+    return [
+        'now' => now()
+    ];
 });
