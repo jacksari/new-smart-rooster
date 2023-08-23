@@ -4,6 +4,7 @@ import {} from "vue";
 
 <template>
     <div>
-        <router-view />
+        <h1>Login page</h1>
+        <router-link :to="{ name: 'index' }">To index</router-link>
     </div>
 </template>
