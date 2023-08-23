@@ -20,7 +20,7 @@ setTimeout(async () => {
 			<img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
 		</a>
 	</div>
-	<HelloWorld msg="Vite + Vue" />
+	<HelloWorld msg="Vite + Vue 123" />
 </template>
 
 <style scoped>
